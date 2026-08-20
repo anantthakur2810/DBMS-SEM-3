@@ -1,0 +1,495 @@
+<mxfile host="app.diagrams.net" agent="ChatGPT" pages="5">
+  <diagram id="hospital-simple" name="Hospital ER Model">
+    <mxGraphModel dx="1380" dy="1529" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="hospital" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#777777;fontSize=14;align=center;verticalAlign=middle;spacing=6;" value="&lt;b&gt;HOSPITAL&lt;/b&gt;&lt;br&gt;Hospital ID, Name, Address" vertex="1">
+          <mxGeometry height="75" width="220" x="588" y="-20" as="geometry" />
+        </mxCell>
+        <mxCell id="department" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#777777;fontSize=13;align=center;verticalAlign=middle;spacing=6;" value="&lt;b&gt;DEPARTMENT&lt;/b&gt;&lt;br&gt;Department ID, Name&lt;br&gt;Location" vertex="1">
+          <mxGeometry height="85" width="210" x="330" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="doctor" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#777777;fontSize=13;align=center;verticalAlign=middle;spacing=6;" value="&lt;b&gt;DOCTOR&lt;/b&gt;&lt;br&gt;Doctor ID, Name&lt;br&gt;Specialization" vertex="1">
+          <mxGeometry height="85" width="210" x="850" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="patient" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#777777;fontSize=13;align=center;verticalAlign=middle;spacing=6;" value="&lt;b&gt;PATIENT&lt;/b&gt;&lt;br&gt;Patient ID, Name&lt;br&gt;Age, Gender, Phone" vertex="1">
+          <mxGeometry height="90" width="210" x="480" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="appointment" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dff0d8;strokeColor=#5b9b4a;fontSize=13;align=center;verticalAlign=middle;spacing=6;" value="&lt;b&gt;APPOINTMENT&lt;/b&gt;&lt;br&gt;Appointment ID&lt;br&gt;Date, Time, Status" vertex="1">
+          <mxGeometry height="90" width="220" x="280" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="room" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#777777;fontSize=13;align=center;verticalAlign=middle;spacing=6;" value="&lt;b&gt;ROOM&lt;/b&gt;&lt;br&gt;Room ID, Number&lt;br&gt;Type, Status" vertex="1">
+          <mxGeometry height="90" width="210" x="670" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="prescription" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fce0e0;strokeColor=#cc3333;fontSize=13;align=center;verticalAlign=middle;spacing=6;" value="&lt;b&gt;PRESCRIPTION&lt;/b&gt;&lt;br&gt;Prescription ID&lt;br&gt;Date, Instructions" vertex="1">
+          <mxGeometry height="90" width="220" x="970" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="medicine" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e4f0fb;strokeColor=#2f75b5;fontSize=13;align=center;verticalAlign=middle;spacing=6;" value="&lt;b&gt;MEDICINE&lt;/b&gt;&lt;br&gt;Medicine ID, Name&lt;br&gt;Dosage, Manufacturer" vertex="1">
+          <mxGeometry height="90" width="220" x="1240" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="RpinnfP-KbSxCd2EmFUW-2" edge="1" parent="1" source="rel1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="hospital" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RpinnfP-KbSxCd2EmFUW-3" edge="1" parent="1" source="rel1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="department">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#999999;fontSize=11;fontStyle=2;align=center;verticalAlign=middle;" value="HAS" vertex="1">
+          <mxGeometry height="40" width="80" x="658" y="115" as="geometry" />
+        </mxCell>
+        <mxCell id="rel2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#999999;fontSize=11;fontStyle=2;align=center;verticalAlign=middle;" value="WORKS IN" vertex="1">
+          <mxGeometry height="40" width="90" x="650" y="182.5" as="geometry" />
+        </mxCell>
+        <mxCell id="rel3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#999999;fontSize=11;fontStyle=2;align=center;verticalAlign=middle;" value="BOOKS" vertex="1">
+          <mxGeometry height="40" width="70" x="140" y="385" as="geometry" />
+        </mxCell>
+        <mxCell id="rel4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#999999;fontSize=11;fontStyle=2;align=center;verticalAlign=middle;" value="ATTENDS" vertex="1">
+          <mxGeometry height="40" width="75" x="548" y="385" as="geometry" />
+        </mxCell>
+        <mxCell id="rel7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#999999;fontSize=11;fontStyle=2;align=center;verticalAlign=middle;" value="CONTAINS" vertex="1">
+          <mxGeometry height="40" width="80" x="1300" y="425" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="hospital" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=11;" target="rel1" value="1 : M">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="rel1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="doctor" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="doctor" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=11;" target="rel2" value="M : 1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="rel2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="department" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="patient" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=11;" target="rel3" value="1 : M">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" edge="1" parent="1" source="rel3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="appointment" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" edge="1" parent="1" source="doctor" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=11;" target="appointment" value="M : 1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="955" y="310.05" />
+              <mxPoint x="470.05" y="310.05" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e9" edge="1" parent="1" source="appointment" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=11;" target="rel4" value="M : 1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e10" edge="1" parent="1" source="rel4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="room" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e11" edge="1" parent="1" source="patient" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=11;" target="prescription" value="1 : M">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e12" edge="1" parent="1" source="rel6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=11;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="rel6" value="1 : M">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1087.47" y="310.07" />
+              <mxPoint x="1087.47" y="310.07" />
+            </Array>
+            <mxPoint x="1040" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e13" edge="1" parent="1" source="prescription" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=11;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="rel7" value="1 : M">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e14" edge="1" parent="1" source="rel7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=11;" target="medicine" value="M : N">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RpinnfP-KbSxCd2EmFUW-4" edge="1" parent="1" source="doctor" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=11;" target="rel6" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+            <mxPoint x="955" y="245" as="sourcePoint" />
+            <mxPoint x="1040" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RpinnfP-KbSxCd2EmFUW-5" edge="1" parent="1" source="rel6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.535;entryY=0.005;entryDx=0;entryDy=0;entryPerimeter=0;" target="prescription">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#999999;fontSize=11;fontStyle=2;align=center;verticalAlign=middle;" value="PRESCRIBES" vertex="1">
+          <mxGeometry height="40" width="95" x="1040" y="320" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="ER Diagram" id="YpnAQ3tnaLVe4PAKUE-L">
+    <mxGraphModel dx="3278" dy="1613" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="Relational Model" id="lCwOqfxcoxoXFAsj5BsB">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="1600" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="rt" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=22;fontColor=#1f4e79;fontStyle=1;" value="RELATIONAL MODEL — TABLES, KEYS &amp;amp; FOREIGN KEYS" vertex="1">
+          <mxGeometry height="45" width="1000" x="300" y="25" as="geometry" />
+        </mxCell>
+        <mxCell id="rs" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=13;fontColor=#666666;fontStyle=0;" value="The five requested relations are highlighted; LIBRARY is included because it is part of the supplied ER structure." vertex="1">
+          <mxGeometry height="28" width="900" x="350" y="65" as="geometry" />
+        </mxCell>
+        <mxCell id="libt" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#7f7f7f;fontColor=#222222;verticalAlign=top;" value="&lt;table border=&#39;0&#39; cellpadding=&#39;5&#39; cellspacing=&#39;0&#39; width=&#39;100%&#39;&gt;&lt;tr&gt;&lt;td align=&#39;center&#39; bgcolor=&#39;#70ad47&#39;&gt;&lt;b&gt;&lt;font color=&#39;#ffffff&#39; size=&#39;4&#39;&gt;LIBRARY&lt;/font&gt;&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&#39;left&#39;&gt;&lt;u&gt;&lt;b&gt;LibraryID&lt;/b&gt;&lt;/u&gt; &lt;font color=&#39;#1f4e79&#39;&gt;(PK / Candidate Key)&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&#39;left&#39;&gt;Name&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&#39;left&#39;&gt;Address&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="180" width="270" x="90" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="stafft" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#7f7f7f;fontColor=#222222;verticalAlign=top;" value="&lt;table border=&#39;0&#39; cellpadding=&#39;5&#39; cellspacing=&#39;0&#39; width=&#39;100%&#39;&gt;&lt;tr&gt;&lt;td align=&#39;center&#39; bgcolor=&#39;#70ad47&#39;&gt;&lt;b&gt;&lt;font color=&#39;#ffffff&#39; size=&#39;4&#39;&gt;STAFF&lt;/font&gt;&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&#39;left&#39;&gt;&lt;u&gt;&lt;b&gt;StaffID&lt;/b&gt;&lt;/u&gt; &lt;font color=&#39;#1f4e79&#39;&gt;(PK / Candidate Key)&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&#39;left&#39;&gt;Name&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&#39;left&#39;&gt;Role&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&#39;left&#39;&gt;&lt;b&gt;LibraryID&lt;/b&gt; &lt;font color=&#39;#c00000&#39;&gt;(FK → LIBRARY.LibraryID)&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="220" width="300" x="400" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="memt" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#7f7f7f;fontColor=#222222;verticalAlign=top;" value="&lt;table border=&#39;0&#39; cellpadding=&#39;5&#39; cellspacing=&#39;0&#39; width=&#39;100%&#39;&gt;&lt;tr&gt;&lt;td align=&#39;center&#39; bgcolor=&#39;#4472c4&#39;&gt;&lt;b&gt;&lt;font color=&#39;#ffffff&#39; size=&#39;4&#39;&gt;MEMBER&lt;/font&gt;&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&#39;left&#39;&gt;&lt;u&gt;&lt;b&gt;MemberID&lt;/b&gt;&lt;/u&gt; &lt;font color=&#39;#1f4e79&#39;&gt;(PK / Candidate Key)&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&#39;left&#39;&gt;Name&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&#39;left&#39;&gt;&lt;b&gt;StaffID&lt;/b&gt; &lt;font color=&#39;#c00000&#39;&gt;(FK → STAFF.StaffID)&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="190" width="300" x="740" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="bookt" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#7f7f7f;fontColor=#222222;verticalAlign=top;" value="&lt;table border=&#39;0&#39; cellpadding=&#39;5&#39; cellspacing=&#39;0&#39; width=&#39;100%&#39;&gt;&lt;tr&gt;&lt;td align=&#39;center&#39; bgcolor=&#39;#4472c4&#39;&gt;&lt;b&gt;&lt;font color=&#39;#ffffff&#39; size=&#39;4&#39;&gt;BOOK&lt;/font&gt;&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&#39;left&#39;&gt;&lt;u&gt;&lt;b&gt;BookID&lt;/b&gt;&lt;/u&gt; &lt;font color=&#39;#1f4e79&#39;&gt;(PK / Candidate Key)&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="150" width="250" x="1080" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="loant" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#7f7f7f;fontColor=#222222;verticalAlign=top;" value="&lt;table border=&#39;0&#39; cellpadding=&#39;5&#39; cellspacing=&#39;0&#39; width=&#39;100%&#39;&gt;&lt;tr&gt;&lt;td align=&#39;center&#39; bgcolor=&#39;#c55a11&#39;&gt;&lt;b&gt;&lt;font color=&#39;#ffffff&#39; size=&#39;4&#39;&gt;LOAN&lt;/font&gt;&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&#39;left&#39;&gt;&lt;u&gt;&lt;b&gt;LoanID&lt;/b&gt;&lt;/u&gt; &lt;font color=&#39;#1f4e79&#39;&gt;(PK / Candidate Key)&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&#39;left&#39;&gt;LoanDate&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&#39;left&#39;&gt;&lt;b&gt;MemberID&lt;/b&gt; &lt;font color=&#39;#c00000&#39;&gt;(FK → MEMBER.MemberID)&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&#39;left&#39;&gt;&lt;b&gt;BookID&lt;/b&gt; &lt;font color=&#39;#c00000&#39;&gt;(FK → BOOK.BookID)&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="250" width="390" x="200" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="rest" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#7f7f7f;fontColor=#222222;verticalAlign=top;" value="&lt;table border=&#39;0&#39; cellpadding=&#39;5&#39; cellspacing=&#39;0&#39; width=&#39;100%&#39;&gt;&lt;tr&gt;&lt;td align=&#39;center&#39; bgcolor=&#39;#cc0000&#39;&gt;&lt;b&gt;&lt;font color=&#39;#ffffff&#39; size=&#39;4&#39;&gt;RESERVATION&lt;/font&gt;&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&#39;left&#39;&gt;&lt;u&gt;&lt;b&gt;ResID&lt;/b&gt;&lt;/u&gt; &lt;font color=&#39;#1f4e79&#39;&gt;(PK / Candidate Key)&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&#39;left&#39;&gt;ResDate&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&#39;left&#39;&gt;&lt;b&gt;MemberID&lt;/b&gt; &lt;font color=&#39;#c00000&#39;&gt;(FK → MEMBER.MemberID)&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&#39;left&#39;&gt;&lt;b&gt;BookID&lt;/b&gt; &lt;font color=&#39;#c00000&#39;&gt;(FK → BOOK.BookID)&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="250" width="390" x="700" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="fk0" edge="1" parent="1" source="stafft" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#999999;dashed=1;" target="libt" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fk1" edge="1" parent="1" source="memt" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#999999;dashed=1;" target="stafft" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fk2" edge="1" parent="1" source="loant" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#999999;dashed=1;" target="memt" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fk3" edge="1" parent="1" source="loant" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#999999;dashed=1;" target="bookt" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fk4" edge="1" parent="1" source="rest" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#999999;dashed=1;" target="memt" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fk5" edge="1" parent="1" source="rest" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#999999;dashed=1;" target="bookt" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="keypanel" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8f9fa;strokeColor=#b7b7b7;fontColor=#333333;fontSize=13;align=left;verticalAlign=top;spacing=10;" value="&lt;b&gt;CANDIDATE KEYS&lt;/b&gt;&lt;br&gt;STAFF: StaffID&lt;br&gt;MEMBER: MemberID&lt;br&gt;BOOK: BookID&lt;br&gt;LOAN: LoanID&lt;br&gt;RESERVATION: ResID&lt;br&gt;&lt;br&gt;&lt;b&gt;Foreign Keys&lt;/b&gt;&lt;br&gt;STAFF.LibraryID → LIBRARY.LibraryID&lt;br&gt;MEMBER.StaffID → STAFF.StaffID&lt;br&gt;LOAN.MemberID → MEMBER.MemberID&lt;br&gt;LOAN.BookID → BOOK.BookID&lt;br&gt;RESERVATION.MemberID → MEMBER.MemberID&lt;br&gt;RESERVATION.BookID → BOOK.BookID" vertex="1">
+          <mxGeometry height="330" width="340" x="1120" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="foot" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;fontColor=#555555;fontStyle=0;" value="Note: No additional candidate keys are assumed unless the problem statement explicitly declares another attribute or combination UNIQUE." vertex="1">
+          <mxGeometry height="60" width="1050" x="250" y="760" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="ER Diagram" id="V2vV0QbPcoRZmz63zQ1z">
+    <mxGraphModel dx="1873" dy="921" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1050" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=22;fontColor=#1f4e79;fontStyle=1;" value="LIBRARY MANAGEMENT SYSTEM — ER DIAGRAM" vertex="1">
+          <mxGeometry height="45" width="740" x="430" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="subtitle" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=13;fontColor=#666666;fontStyle=0;" value="Chen notation: entities, attributes, relationships, cardinalities" vertex="1">
+          <mxGeometry height="28" width="600" x="500" y="62" as="geometry" />
+        </mxCell>
+        <mxCell id="lib" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e2f0d9;strokeColor=#70ad47;fontColor=#222222;fontSize=15;align=center;verticalAlign=middle;" value="&lt;b&gt;LIBRARY&lt;/b&gt;" vertex="1">
+          <mxGeometry height="65" width="220" x="690" y="115" as="geometry" />
+        </mxCell>
+        <mxCell id="staff" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e2f0d9;strokeColor=#70ad47;fontColor=#222222;fontSize=15;align=center;verticalAlign=middle;" value="&lt;b&gt;STAFF&lt;/b&gt;" vertex="1">
+          <mxGeometry height="65" width="220" x="220" y="245" as="geometry" />
+        </mxCell>
+        <mxCell id="member" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#222222;fontSize=15;align=center;verticalAlign=middle;" value="&lt;b&gt;MEMBER&lt;/b&gt;" vertex="1">
+          <mxGeometry height="65" width="220" x="220" y="475" as="geometry" />
+        </mxCell>
+        <mxCell id="book" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#222222;fontSize=15;align=center;verticalAlign=middle;" value="&lt;b&gt;BOOK&lt;/b&gt;" vertex="1">
+          <mxGeometry height="65" width="220" x="1110" y="475" as="geometry" />
+        </mxCell>
+        <mxCell id="loan" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fce4d6;strokeColor=#c55a11;fontColor=#222222;fontSize=15;align=center;verticalAlign=middle;" value="&lt;b&gt;LOAN&lt;/b&gt;" vertex="1">
+          <mxGeometry height="80" width="240" x="460" y="735" as="geometry" />
+        </mxCell>
+        <mxCell id="res" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f4cccc;strokeColor=#cc0000;fontColor=#222222;fontSize=15;align=center;verticalAlign=middle;" value="&lt;b&gt;RESERVATION&lt;/b&gt;" vertex="1">
+          <mxGeometry height="80" width="240" x="850" y="735" as="geometry" />
+        </mxCell>
+        <mxCell id="emp" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#eadcf8;strokeColor=#9673a6;fontColor=#222222;fontStyle=1;" value="EMPLOYS" vertex="1">
+          <mxGeometry height="70" width="120" x="455" y="155" as="geometry" />
+        </mxCell>
+        <mxCell id="man" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#eadcf8;strokeColor=#9673a6;fontColor=#222222;fontStyle=1;" value="MANAGES" vertex="1">
+          <mxGeometry height="70" width="120" x="270" y="355" as="geometry" />
+        </mxCell>
+        <mxCell id="bor" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fce4d6;strokeColor=#c55a11;fontColor=#222222;fontStyle=1;" value="BORROWS" vertex="1">
+          <mxGeometry height="80" width="130" x="700" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="lib_emp" edge="1" parent="1" source="lib" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;" target="emp" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="emp_staff" edge="1" parent="1" source="emp" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;" target="staff" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="emp1" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=13;fontColor=#333333;fontStyle=1;" value="1" vertex="1">
+          <mxGeometry height="22" width="30" x="575" y="165" as="geometry" />
+        </mxCell>
+        <mxCell id="empn" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=13;fontColor=#333333;fontStyle=1;" value="N" vertex="1">
+          <mxGeometry height="22" width="30" x="410" y="245" as="geometry" />
+        </mxCell>
+        <mxCell id="staff_man" edge="1" parent="1" source="staff" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;" target="man" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="man_mem" edge="1" parent="1" source="man" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;" target="member" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="man1" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=13;fontColor=#333333;fontStyle=1;" value="1" vertex="1">
+          <mxGeometry height="22" width="30" x="405" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="mann" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=13;fontColor=#333333;fontStyle=1;" value="N" vertex="1">
+          <mxGeometry height="22" width="30" x="205" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="mem_bor" edge="1" parent="1" source="member" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;" target="bor" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bor_book" edge="1" parent="1" source="bor" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;" target="book" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="borm" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=13;fontColor=#333333;fontStyle=1;" value="M" vertex="1">
+          <mxGeometry height="22" width="30" x="650" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="born" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=13;fontColor=#333333;fontStyle=1;" value="N" vertex="1">
+          <mxGeometry height="22" width="30" x="845" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="lmrel" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontColor=#222222;fontStyle=1;" value="HAS LOAN" vertex="1">
+          <mxGeometry height="65" width="120" x="350" y="610" as="geometry" />
+        </mxCell>
+        <mxCell id="lbrel" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontColor=#222222;fontStyle=1;" value="FOR BOOK" vertex="1">
+          <mxGeometry height="65" width="120" x="880" y="610" as="geometry" />
+        </mxCell>
+        <mxCell id="member_lrel" edge="1" parent="1" source="member" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;" target="lmrel" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lrel_loan" edge="1" parent="1" source="lmrel" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;" target="loan" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lm1" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;fontColor=#333333;fontStyle=1;" value="1" vertex="1">
+          <mxGeometry height="20" width="25" x="325" y="585" as="geometry" />
+        </mxCell>
+        <mxCell id="lmn" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;fontColor=#333333;fontStyle=1;" value="N" vertex="1">
+          <mxGeometry height="20" width="25" x="420" y="700" as="geometry" />
+        </mxCell>
+        <mxCell id="book_lbrel" edge="1" parent="1" source="book" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;" target="lbrel" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lbrel_loan" edge="1" parent="1" source="lbrel" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;" target="loan" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lb1" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;fontColor=#333333;fontStyle=1;" value="1" vertex="1">
+          <mxGeometry height="20" width="25" x="975" y="585" as="geometry" />
+        </mxCell>
+        <mxCell id="lbn" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;fontColor=#333333;fontStyle=1;" value="N" vertex="1">
+          <mxGeometry height="20" width="25" x="735" y="700" as="geometry" />
+        </mxCell>
+        <mxCell id="rmrel" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontColor=#222222;fontStyle=1;" value="HAS RES." vertex="1">
+          <mxGeometry height="65" width="125" x="350" y="845" as="geometry" />
+        </mxCell>
+        <mxCell id="rbrel" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontColor=#222222;fontStyle=1;" value="FOR BOOK" vertex="1">
+          <mxGeometry height="65" width="125" x="1005" y="845" as="geometry" />
+        </mxCell>
+        <mxCell id="member_rrel" edge="1" parent="1" source="member" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;" target="rmrel" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rrel_res" edge="1" parent="1" source="rmrel" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;" target="res" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rm1" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;fontColor=#333333;fontStyle=1;" value="1" vertex="1">
+          <mxGeometry height="20" width="25" x="325" y="820" as="geometry" />
+        </mxCell>
+        <mxCell id="rmn" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;fontColor=#333333;fontStyle=1;" value="N" vertex="1">
+          <mxGeometry height="20" width="25" x="420" y="930" as="geometry" />
+        </mxCell>
+        <mxCell id="book_rbrel" edge="1" parent="1" source="book" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;" target="rbrel" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rbrel_res" edge="1" parent="1" source="rbrel" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;" target="res" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rb1" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;fontColor=#333333;fontStyle=1;" value="1" vertex="1">
+          <mxGeometry height="20" width="25" x="1125" y="820" as="geometry" />
+        </mxCell>
+        <mxCell id="rbn" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;fontColor=#333333;fontStyle=1;" value="N" vertex="1">
+          <mxGeometry height="20" width="25" x="1000" y="930" as="geometry" />
+        </mxCell>
+        <mxCell id="a_libid" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontColor=#222222;fontSize=13;" value="&lt;u&gt;LibraryID&lt;/u&gt;" vertex="1">
+          <mxGeometry height="40" width="125" x="590" y="85" as="geometry" />
+        </mxCell>
+        <mxCell id="ed_a_libid" edge="1" parent="1" source="a_libid" style="endArrow=none;html=1;rounded=0;" target="lib" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a_lname" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontColor=#222222;fontSize=13;" value="Name" vertex="1">
+          <mxGeometry height="40" width="90" x="905" y="85" as="geometry" />
+        </mxCell>
+        <mxCell id="ed_a_lname" edge="1" parent="1" source="a_lname" style="endArrow=none;html=1;rounded=0;" target="lib" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a_laddr" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontColor=#222222;fontSize=13;" value="Address" vertex="1">
+          <mxGeometry height="40" width="90" x="905" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="ed_a_laddr" edge="1" parent="1" source="a_laddr" style="endArrow=none;html=1;rounded=0;" target="lib" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a_sid" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontColor=#222222;fontSize=13;" value="&lt;u&gt;StaffID&lt;/u&gt;" vertex="1">
+          <mxGeometry height="40" width="110" x="65" y="235" as="geometry" />
+        </mxCell>
+        <mxCell id="ed_a_sid" edge="1" parent="1" source="a_sid" style="endArrow=none;html=1;rounded=0;" target="staff" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a_sname" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontColor=#222222;fontSize=13;" value="Name" vertex="1">
+          <mxGeometry height="40" width="90" x="90" y="305" as="geometry" />
+        </mxCell>
+        <mxCell id="ed_a_sname" edge="1" parent="1" source="a_sname" style="endArrow=none;html=1;rounded=0;" target="staff" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a_role" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontColor=#222222;fontSize=13;" value="Role" vertex="1">
+          <mxGeometry height="40" width="100" x="455" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="ed_a_role" edge="1" parent="1" source="a_role" style="endArrow=none;html=1;rounded=0;" target="staff" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a_mid" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontColor=#222222;fontSize=13;" value="&lt;u&gt;MemberID&lt;/u&gt;" vertex="1">
+          <mxGeometry height="40" width="110" x="65" y="445" as="geometry" />
+        </mxCell>
+        <mxCell id="ed_a_mid" edge="1" parent="1" source="a_mid" style="endArrow=none;html=1;rounded=0;" target="member" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a_mname" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontColor=#222222;fontSize=13;" value="Name" vertex="1">
+          <mxGeometry height="40" width="90" x="90" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="ed_a_mname" edge="1" parent="1" source="a_mname" style="endArrow=none;html=1;rounded=0;" target="member" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a_bid" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontColor=#222222;fontSize=13;" value="&lt;u&gt;BookID&lt;/u&gt;" vertex="1">
+          <mxGeometry height="40" width="100" x="1350" y="445" as="geometry" />
+        </mxCell>
+        <mxCell id="ed_a_bid" edge="1" parent="1" source="a_bid" style="endArrow=none;html=1;rounded=0;" target="book" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a_lid" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontColor=#222222;fontSize=13;" value="&lt;u&gt;LoanID&lt;/u&gt;" vertex="1">
+          <mxGeometry height="40" width="100" x="405" y="845" as="geometry" />
+        </mxCell>
+        <mxCell id="ed_a_lid" edge="1" parent="1" source="a_lid" style="endArrow=none;html=1;rounded=0;" target="loan" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a_ldate" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontColor=#222222;fontSize=13;" value="LoanDate" vertex="1">
+          <mxGeometry height="40" width="100" x="560" y="845" as="geometry" />
+        </mxCell>
+        <mxCell id="ed_a_ldate" edge="1" parent="1" source="a_ldate" style="endArrow=none;html=1;rounded=0;" target="loan" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a_lmfk" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontColor=#222222;fontSize=13;" value="MemberID (FK)" vertex="1">
+          <mxGeometry height="40" width="130" x="405" y="790" as="geometry" />
+        </mxCell>
+        <mxCell id="ed_a_lmfk" edge="1" parent="1" source="a_lmfk" style="endArrow=none;html=1;rounded=0;" target="loan" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a_lbfk" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontColor=#222222;fontSize=13;" value="BookID (FK)" vertex="1">
+          <mxGeometry height="40" width="110" x="575" y="790" as="geometry" />
+        </mxCell>
+        <mxCell id="ed_a_lbfk" edge="1" parent="1" source="a_lbfk" style="endArrow=none;html=1;rounded=0;" target="loan" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a_rid" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontColor=#222222;fontSize=13;" value="&lt;u&gt;ResID&lt;/u&gt;" vertex="1">
+          <mxGeometry height="40" width="100" x="795" y="845" as="geometry" />
+        </mxCell>
+        <mxCell id="ed_a_rid" edge="1" parent="1" source="a_rid" style="endArrow=none;html=1;rounded=0;" target="res" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a_rdate" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontColor=#222222;fontSize=13;" value="ResDate" vertex="1">
+          <mxGeometry height="40" width="100" x="950" y="845" as="geometry" />
+        </mxCell>
+        <mxCell id="ed_a_rdate" edge="1" parent="1" source="a_rdate" style="endArrow=none;html=1;rounded=0;" target="res" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a_rmfk" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontColor=#222222;fontSize=13;" value="MemberID (FK)" vertex="1">
+          <mxGeometry height="40" width="130" x="795" y="790" as="geometry" />
+        </mxCell>
+        <mxCell id="ed_a_rmfk" edge="1" parent="1" source="a_rmfk" style="endArrow=none;html=1;rounded=0;" target="res" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a_rbfk" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#666666;fontColor=#222222;fontSize=13;" value="BookID (FK)" vertex="1">
+          <mxGeometry height="40" width="110" x="965" y="790" as="geometry" />
+        </mxCell>
+        <mxCell id="ed_a_rbfk" edge="1" parent="1" source="a_rbfk" style="endArrow=none;html=1;rounded=0;" target="res" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="note" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8f9fa;strokeColor=#b7b7b7;fontColor=#333333;fontSize=12;align=left;verticalAlign=middle;spacing=8;" value="&lt;b&gt;Key:&lt;/b&gt; Underlined attribute = key attribute (candidate key / selected PK).&lt;br&gt;&lt;b&gt;Transaction entities:&lt;/b&gt; LOAN and RESERVATION implement the MEMBER–BOOK M:N association and carry the two FKs." vertex="1">
+          <mxGeometry height="55" width="760" x="380" y="965" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="Relational Model" id="ydDjNbfnYuHl2WAL72Hi">
+    <mxGraphModel dx="1787" dy="1075" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1000" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="rt" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=22;fontColor=#1f4e79;fontStyle=1;" value="RELATIONAL MODEL — TABLES, KEYS &amp;amp; FOREIGN KEYS" vertex="1">
+          <mxGeometry height="45" width="1000" x="300" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="libt" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#7f7f7f;fontColor=#222222;verticalAlign=top;;fontSize=13" value="&lt;table border=&quot;0&quot; cellpadding=&quot;5&quot; cellspacing=&quot;0&quot; width=&quot;100%&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td align=&quot;center&quot; bgcolor=&quot;#70ad47&quot;&gt;&lt;b&gt;&lt;font color=&quot;#ffffff&quot; style=&quot;font-size: 17px;&quot;&gt;LIBRARY&lt;/font&gt;&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;&lt;u&gt;&lt;b&gt;LibraryID&lt;/b&gt;&lt;/u&gt; &lt;font color=&quot;#1f4e79&quot;&gt;(PK / Candidate Key)&lt;/font&gt;&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;Name&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;Address&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="190" width="300" x="60" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="stafft" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#7f7f7f;fontColor=#222222;verticalAlign=top;;fontSize=13" value="&lt;table border=&quot;0&quot; cellpadding=&quot;5&quot; cellspacing=&quot;0&quot; width=&quot;100%&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td align=&quot;center&quot; bgcolor=&quot;#70ad47&quot;&gt;&lt;b&gt;&lt;font color=&quot;#ffffff&quot; style=&quot;font-size: 17px;&quot;&gt;STAFF&lt;/font&gt;&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;&lt;u&gt;&lt;b&gt;StaffID&lt;/b&gt;&lt;/u&gt; &lt;font color=&quot;#1f4e79&quot;&gt;(PK / Candidate Key)&lt;/font&gt;&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;Name&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;Role&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;&lt;b&gt;LibraryID&lt;/b&gt; &lt;font color=&quot;#c00000&quot;&gt;(FK → LIBRARY.LibraryID)&lt;/font&gt;&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="230" width="320" x="430" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="memt" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#7f7f7f;fontColor=#222222;verticalAlign=top;;fontSize=13" value="&lt;table border=&quot;0&quot; cellpadding=&quot;5&quot; cellspacing=&quot;0&quot; width=&quot;100%&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td align=&quot;center&quot; bgcolor=&quot;#4472c4&quot;&gt;&lt;b&gt;&lt;font color=&quot;#ffffff&quot; style=&quot;font-size: 17px;&quot;&gt;MEMBER&lt;/font&gt;&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;&lt;u&gt;&lt;b&gt;MemberID&lt;/b&gt;&lt;/u&gt; &lt;font color=&quot;#1f4e79&quot;&gt;(PK / Candidate Key)&lt;/font&gt;&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;Name&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;&lt;b&gt;StaffID&lt;/b&gt; &lt;font color=&quot;#c00000&quot;&gt;(FK → STAFF.StaffID)&lt;/font&gt;&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="200" width="320" x="790" y="155" as="geometry" />
+        </mxCell>
+        <mxCell id="bookt" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#7f7f7f;fontColor=#222222;verticalAlign=top;;fontSize=13" value="&lt;table border=&quot;0&quot; cellpadding=&quot;5&quot; cellspacing=&quot;0&quot; width=&quot;100%&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td align=&quot;center&quot; bgcolor=&quot;#4472c4&quot;&gt;&lt;b&gt;&lt;font color=&quot;#ffffff&quot; style=&quot;font-size: 18px;&quot;&gt;BOOK&lt;/font&gt;&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;u&gt;&lt;b&gt;BookID&lt;/b&gt;&lt;/u&gt; &lt;font color=&quot;#1f4e79&quot;&gt;(PK / Candidate Key)&lt;/font&gt;&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="170" width="300" x="1170" y="167" as="geometry" />
+        </mxCell>
+        <mxCell id="loant" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#7f7f7f;fontColor=#222222;verticalAlign=top;;fontSize=13" value="&lt;table border=&quot;0&quot; cellpadding=&quot;5&quot; cellspacing=&quot;0&quot; width=&quot;100%&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td align=&quot;center&quot; bgcolor=&quot;#c55a11&quot;&gt;&lt;b&gt;&lt;font color=&quot;#ffffff&quot; style=&quot;font-size: 19px;&quot;&gt;LOAN&lt;/font&gt;&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;&lt;font style=&quot;font-size: 19px;&quot;&gt;&lt;u&gt;&lt;b&gt;LoanID&lt;/b&gt;&lt;/u&gt; &lt;font color=&quot;#1f4e79&quot;&gt;(PK / Candidate Key)&lt;/font&gt;&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;&lt;font style=&quot;font-size: 19px;&quot;&gt;LoanDate&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;&lt;font style=&quot;font-size: 19px;&quot;&gt;&lt;b&gt;MemberID&lt;/b&gt; &lt;font color=&quot;#c00000&quot;&gt;(FK → MEMBER.MemberID)&lt;/font&gt;&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;&lt;font style=&quot;font-size: 19px;&quot;&gt;&lt;b&gt;BookID&lt;/b&gt; &lt;font color=&quot;#c00000&quot;&gt;(FK → BOOK.BookID)&lt;/font&gt;&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="275" width="430" x="170" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="rest" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#7f7f7f;fontColor=#222222;verticalAlign=top;;fontSize=13" value="&lt;table border=&quot;0&quot; cellpadding=&quot;5&quot; cellspacing=&quot;0&quot; width=&quot;100%&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td align=&quot;center&quot; bgcolor=&quot;#cc0000&quot;&gt;&lt;b&gt;&lt;font color=&quot;#ffffff&quot; style=&quot;font-size: 16px;&quot;&gt;RESERVATION&lt;/font&gt;&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;u&gt;&lt;b&gt;ResID&lt;/b&gt;&lt;/u&gt; &lt;font color=&quot;#1f4e79&quot;&gt;(PK / Candidate Key)&lt;/font&gt;&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;ResDate&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;MemberID&lt;/b&gt; &lt;font color=&quot;#c00000&quot;&gt;(FK → MEMBER.MemberID)&lt;/font&gt;&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;BookID&lt;/b&gt; &lt;font color=&quot;#c00000&quot;&gt;(FK → BOOK.BookID)&lt;/font&gt;&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" vertex="1">
+          <mxGeometry height="275" width="430" x="665" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="fk0" edge="1" parent="1" source="stafft" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#999999;strokeWidth=4;" target="libt" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fk1" edge="1" parent="1" source="memt" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#999999;strokeWidth=4;" target="stafft" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fk2" edge="1" parent="1" source="loant" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#999999;strokeWidth=4;" target="memt" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="385" y="420" />
+              <mxPoint x="880.07" y="420" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fk3" edge="1" parent="1" source="loant" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#999999;strokeWidth=4;" target="bookt" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="385.07" y="790" />
+              <mxPoint x="1530" y="790" />
+              <mxPoint x="1530" y="252" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fk4" edge="1" parent="1" source="rest" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#999999;strokeWidth=4;" target="memt" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="950.07" y="440" />
+              <mxPoint x="950.07" y="440" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fk5" edge="1" parent="1" source="rest" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#999999;strokeWidth=3;" target="bookt" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1000.07" y="400" />
+              <mxPoint x="1320.07" y="400" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="keypanel" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8f9fa;strokeColor=#b7b7b7;fontColor=#333333;fontSize=13;align=left;verticalAlign=top;spacing=10;" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;b style=&quot;&quot;&gt;CANDIDATE KEYS&lt;/b&gt;&lt;br&gt;STAFF: StaffID&lt;br&gt;MEMBER: MemberID&lt;br&gt;BOOK: BookID&lt;br&gt;LOAN: LoanID&lt;br&gt;RESERVATION: ResID&lt;br&gt;&lt;br&gt;&lt;b style=&quot;&quot;&gt;Foreign Keys&lt;/b&gt;&lt;br&gt;STAFF.LibraryID → LIBRARY.LibraryID&lt;br&gt;MEMBER.StaffID → STAFF.StaffID&lt;br&gt;LOAN.MemberID → MEMBER.MemberID&lt;br&gt;LOAN.BookID → BOOK.BookID&lt;br&gt;RESERVATION.MemberID → MEMBER.MemberID&lt;br&gt;RESERVATION.BookID → BOOK.BookID&lt;/font&gt;" vertex="1">
+          <mxGeometry height="335" width="330" x="1160" y="420" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
